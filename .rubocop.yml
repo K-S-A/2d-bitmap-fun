@@ -1,0 +1,57 @@
+require: rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 2.5
+
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - 'x'
+    - 'x1'
+    - 'x2'
+    - 'y'
+    - 'y1'
+    - 'y2'
+
+RSpec/MultipleExpectations:
+  AggregateFailuresByDefault: true
+
+RSpec/NestedGroups:
+  Max: 5
+
+RSpec/InstanceVariable:
+  Exclude:
+    - 'spec/support/bitmap_context.rb'
+    - 'spec/support/area_context.rb'
+
+RSpec/ExampleLength:
+  Exclude:
+    - 'spec/bitmap_spec.rb'
+    - 'spec/area_spec.rb'
+    - 'spec/utility/bresenham_spec.rb'
+    - 'spec/validators/two_dimensional_coordinates_validator_spec.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'lib/utility/bresenham.rb'
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - 'it'
+    - 'describe'
+    - 'context'
+
+Metrics/AbcSize:
+  Exclude:
+    - 'lib/utility/bresenham.rb'
+
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/area.rb'
+    - 'lib/bitmap.rb'
+    - 'lib/validators/base.rb'
+    - 'lib/validators/colors_validator.rb'
+    - 'lib/validators/two_dimensional_coordinates_validator.rb'
+
+Metrics/LineLength:
+  Max: 122

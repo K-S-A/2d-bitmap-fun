@@ -1,0 +1,16 @@
+language: ruby
+
+sudo: false
+
+rvm:
+ - 2.5.1
+
+env:
+  - COVERAGE=true
+
+install:
+  - bundle install --quiet
+
+script:
+  - bundle exec rspec
+  - bundle exec rubocop
