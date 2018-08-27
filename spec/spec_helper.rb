@@ -2,6 +2,9 @@
 
 require 'simplecov' if ENV['COVERAGE']
 
+require './lib/bitmap'
+
+Dir[Pathname.getwd.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -23,4 +26,6 @@ RSpec.configure do |config|
   config.profile_examples = 3
   config.order = :random
   Kernel.srand config.seed
+
+  config.include(BitmapHelper)
 end
