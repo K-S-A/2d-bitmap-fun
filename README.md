@@ -6,8 +6,8 @@
 
 # 2D-bitmap-fun
 
-`Bitmap` class that should implement some primitive operations on images.
-Image is a rectangle canvas where (`0`,`0`) is the top left coordinate and (`width-1`,`height-1`) is bottom right coordinate. Color is a character of latin alphabet. At the beginning all images are transperent.
+`Bitmap` class implements some primitive operations on images.
+Image is a rectangle canvas where (`0`,`0`) is the top left coordinate and (`width - 1`,`height - 1`) is bottom right coordinate. Color is a character of latin alphabet. At the beginning all images are transperent.
 
 ## Installation
 Execute:
