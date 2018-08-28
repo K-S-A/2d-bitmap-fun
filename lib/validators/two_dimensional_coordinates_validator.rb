@@ -3,6 +3,8 @@
 require 'validators/base'
 
 module Validators
+  # Adds validation for width/height attributes and coordinate values.
+  # Assumes, that class implements +width+ and +height+ methods.
   module TwoDimensionalCoordinatesValidator # :nodoc:
     include Base
 

@@ -3,7 +3,9 @@
 require 'validators/base'
 
 module Validators
-  module ColorsValidator # :nodoc:
+  # Adds validation for color values
+  # Assumes, that class should provide +COLORS+ array with allowed values.
+  module ColorsValidator
     include Base
 
     def validate_color!(value)

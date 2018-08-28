@@ -5,6 +5,14 @@ require 'area'
 require 'validators/colors_validator'
 require 'validators/two_dimensional_coordinates_validator'
 
+# Implements some primitive operations on images.
+# Image is a rectangle canvas where (`0`,`0`) is the top left coordinate
+# and (`width - 1`,`height - 1`) is bottom right coordinate.
+# Color is a character of latin alphabet.
+# At the beginning all images are transperent.
+# == Attributes
+# * +width+: canvas width (+Integer+)
+# * +height+: canvas height (+Integer+)
 class Bitmap
   include Validators::ColorsValidator
   include Validators::TwoDimensionalCoordinatesValidator

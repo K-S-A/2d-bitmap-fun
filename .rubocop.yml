@@ -47,11 +47,6 @@ Metrics/AbcSize:
 Style/Documentation:
   Exclude:
     - 'spec/**/*'
-    - 'lib/area.rb'
-    - 'lib/bitmap.rb'
-    - 'lib/validators/base.rb'
-    - 'lib/validators/colors_validator.rb'
-    - 'lib/validators/two_dimensional_coordinates_validator.rb'
 
 Metrics/LineLength:
   Max: 122

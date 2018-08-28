@@ -11,6 +11,13 @@ module Utility
       Line.new(x1, y1, x2, y2).points
     end
 
+    # Implements Bresenham's line algorithm
+    #
+    # == Attributes
+    #   * +x1+: x coordinate of the first point
+    #   * +y1+: y coordinate of the first point
+    #   * +x2+: x coordinate of the second point
+    #   * +y2+: y coordinate of the second point
     class Line
       attr_reader :x1,
                   :y1,
@@ -63,13 +70,10 @@ module Utility
 
       def next_delta_y(delta, y)
         if delta.positive?
-          delta += xy_derrivative
-          y += slope
+          [delta + xy_derrivative, y + slope]
         else
-          delta += y_derrivative
+          [delta + y_derrivative, y]
         end
-
-        [delta, y]
       end
 
       def delta_x

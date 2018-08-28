@@ -3,6 +3,11 @@
 require 'matrix'
 require 'utility/bresenham'
 
+# Implements pure logic related to canvas manipulation.
+# == Attributes:
+# * +width+: canvas width (+Integer+)
+# * +height+: canvas height (+Integer+)
+# * +color+: canvas color (+String+)
 class Area
   include Utility::Bresenham
 
