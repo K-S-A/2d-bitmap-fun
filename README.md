@@ -2,6 +2,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/79dfc961451bdb33db81/test_coverage)](https://codeclimate.com/github/K-S-A/2d-bitmap-fun/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/79dfc961451bdb33db81/maintainability)](https://codeclimate.com/github/K-S-A/2d-bitmap-fun/maintainability)
 [![Depfu](https://badges.depfu.com/badges/98b38f769188cb97c7968a2ea8951db3/overview.svg)](https://depfu.com/github/K-S-A/2d-bitmap-fun?project=Bundler)
+[![Inch CI](https://inch-ci.org/github/K-S-A/2d-bitmap-fun.svg?branch=master&amp;style=flat)](https://inch-ci.org/github/K-S-A/2d-bitmap-fun)
 
 # 2D-bitmap-fun
 
