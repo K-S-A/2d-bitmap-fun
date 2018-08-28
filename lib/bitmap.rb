@@ -54,7 +54,7 @@ class Bitmap
     validate_coordinates!(x1, y1, x2, y2)
     validate_color!(color)
 
-    area.draw_line(x1, y1, x2, y2, color)
+    area.draw_line(x1: x1, y1: y1, x2: x2, y2: y2, color: color)
   end
 
   # clears whole canvas

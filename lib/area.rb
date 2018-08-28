@@ -33,7 +33,7 @@ class Area
         .join("\n")
   end
 
-  def draw_line(x1, y1, x2, y2, color)
+  def draw_line(x1:, y1:, x2:, y2:, color:)
     points(x1, y1, x2, y2).each do |x, y|
       draw_pixel(x, y, color)
     end

@@ -76,10 +76,10 @@ RSpec.describe Area do
 
   describe '#draw_line' do
     before do
-      area0.draw_line(0, 0, 0, 2, 'X')
-      area1.draw_line(0, 0, 2, 0, 'X')
-      area2.draw_line(0, 0, 2, 2, 'X')
-      area3.draw_line(0, 0, 2, 1, 'X')
+      area0.draw_line(x1: 0, y1: 0, x2: 0, y2: 2, color: 'X')
+      area1.draw_line(x1: 0, y1: 0, x2: 2, y2: 0, color: 'X')
+      area2.draw_line(x1: 0, y1: 0, x2: 2, y2: 2, color: 'X')
+      area3.draw_line(x1: 0, y1: 0, x2: 2, y2: 1, color: 'X')
     end
 
     let(:area0) { described_class.new(3, 3, ' ') }
