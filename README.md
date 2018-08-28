@@ -12,14 +12,16 @@ Image is a rectangle canvas where (`0`,`0`) is the top left coordinate and (`wid
 ## Installation
 Execute:
 
-    $ bundle insall
+```console
+$ bundle insall
+```
 
 ## Usage
 
 Open console:
 
-```sh
-irb -I lib
+```console
+$ irb -I lib
 ```
 
 Basic usage:
@@ -28,12 +30,25 @@ Basic usage:
 require 'bitmap'
 
 bitmap = Bitmap.new(10, 10)
+# => #<Bitmap:0x00... >>
+
 bitmap.draw_pixel(2, 6, 'K')
+# => "K"
+
 bitmap.pixel(3, 7)
-bitmap.draw_line(3, 7, 1, 2, 'K')
+# => " "
+
+bitmap.draw_line(3, 7, 1, 2, 'Y')
+# => [[1, 2], [1, 3], [2, 4], [2, 5], [3, 6], [3, 7]]
+
 bitmap.picture
+# => "          \n          \n Y        \n Y        \n  Y       \n  Y       \n  KY      \n   Y      \n          \n          "
+
 bitmap.picture(3, 3, 7, 7)
+# => "     \n     \n     \nY    \nY    "
+
 bitmap.clear
+# => #<Bitmap:0x00... >>
 ```
 ## Tests
 
