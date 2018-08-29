@@ -4,7 +4,7 @@ require 'matrix'
 require 'utility/bresenham'
 
 # Implements pure logic related to canvas manipulation.
-# == Attributes:
+# == Arguments:
 # * +width+: canvas width (+Integer+)
 # * +height+: canvas height (+Integer+)
 # * +color+: canvas color (+String+)
