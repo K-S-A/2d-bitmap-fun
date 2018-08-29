@@ -14,9 +14,9 @@ module Validators
     end
 
     def validate_coordinates!(*args)
-      args.each_slice(2) do |x, y|
-        raise_error(invalid_x_message(x)) if invalid_x?(x)
-        raise_error(invalid_y_message(y)) if invalid_y?(y)
+      args.each_slice(2) do |i, j|
+        raise_error(invalid_x_message(i)) if invalid_x?(i)
+        raise_error(invalid_y_message(j)) if invalid_y?(j)
       end
     end
 
