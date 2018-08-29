@@ -16,7 +16,7 @@ RSpec/MultipleExpectations:
   AggregateFailuresByDefault: true
 
 RSpec/NestedGroups:
-  Max: 5
+  Max: 4
 
 RSpec/InstanceVariable:
   Exclude:
