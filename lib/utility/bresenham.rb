@@ -33,15 +33,7 @@ module Utility
 
         @vertical = vertical?
 
-        if vertical
-          @x1, @y1 = @y1, @x1
-          @x2, @y2 = @y2, @x2
-        end
-
-        return if @x1 < @x2
-
-        @x1, @x2 = @x2, @x1
-        @y1, @y2 = @y2, @y1
+        normalize_params!
       end
 
       def points
@@ -56,6 +48,18 @@ module Utility
 
       def vertical?
         (y2 - y1).abs > (x2 - x1).abs
+      end
+
+      def normalize_params!
+        if vertical
+          @x1, @y1 = @y1, @x1
+          @x2, @y2 = @y2, @x2
+        end
+
+        return if x1 < x2
+
+        @x1, @x2 = @x2, @x1
+        @y1, @y2 = @y2, @y1
       end
 
       def approx_points

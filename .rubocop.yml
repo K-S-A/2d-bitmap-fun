@@ -30,23 +30,11 @@ RSpec/ExampleLength:
     - 'spec/utility/bresenham_spec.rb'
     - 'spec/validators/two_dimensional_coordinates_validator_spec.rb'
 
-Metrics/MethodLength:
-  Exclude:
-    - 'lib/utility/bresenham.rb'
-
 Metrics/BlockLength:
   ExcludedMethods:
     - 'it'
     - 'describe'
     - 'context'
-
-Metrics/AbcSize:
-  Exclude:
-    - 'lib/utility/bresenham.rb'
-
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
 
 Metrics/LineLength:
   Max: 122
