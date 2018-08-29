@@ -7,7 +7,7 @@
 # 2D-bitmap-fun
 
 `Bitmap` class implements some primitive operations on images.
-Image is a rectangle canvas where (`0`,`0`) is the top left coordinate and (`width - 1`,`height - 1`) is bottom right coordinate. Color is a character of latin alphabet. At the beginning all images are transperent.
+Image is a rectangle canvas where (`0`, `0`) is the top left coordinate and (`width - 1`, `height - 1`) is bottom right coordinate. Color is a character of latin alphabet. At the beginning all images are transperent.
 
 ## Installation
 Execute:
@@ -21,14 +21,12 @@ $ bundle insall
 Open console:
 
 ```console
-$ irb -I lib
+$ irb -I lib -r bitmap.rb
 ```
 
 Basic usage:
 
 ```ruby
-require 'bitmap'
-
 bitmap = Bitmap.new(10, 10)
 # => #<Bitmap:0x00... >>
 
@@ -49,6 +47,9 @@ bitmap.picture(3, 3, 7, 7)
 
 bitmap.clear
 # => #<Bitmap:0x00... >>
+
+bitmap.picture
+# => "          \n          \n          \n          \n          \n          \n          \n          \n          \n          "
 ```
 ## Tests
 
