@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.shared_context 'area context', :area_context do
+RSpec.shared_context 'with area context', :area_context do
   before(:all) do
     @area_1x1 = area_factory(valid_colors_generator(1, 1))
     @area_1x2 = area_factory(valid_colors_generator(2, 1))

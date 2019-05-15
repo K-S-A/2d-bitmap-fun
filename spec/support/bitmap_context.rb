@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.shared_context 'bitmap context', :bitmap_context do
+RSpec.shared_context 'with bitmap context', :bitmap_context do
   before(:all) do
     @bitmap_1x1 = bitmap_factory(valid_colors_generator(1, 1))
     @bitmap_1x2 = bitmap_factory(valid_colors_generator(2, 1))
